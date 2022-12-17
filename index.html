@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 500px;
+            height: 400px;
+            background-color: black;
+            box-shadow: rgba(149, 157,165, 0.7);
+            display: grid;
+           grid-template-columns:repeat(2,1fr) 1fr ;
+          grid-template-rows: repeat(2,1fr) 1fr;
+          grid-column-gap:10px ;
+          grid-row-gap: 10px;
+          
+          
+        }
+        body{
+            margin:10%;
+            text-align: center;
+        }
+        .item-1{
+            background-color: aquamarine;
+           /* grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 3;
+            grid-row-end: 4;*/
+            grid-column: 3/4;
+            grid-row: 3/4;
+        }
+    
+        .item-2{
+            background-color: rgb(180, 195, 190);
+            grid-row: 3/4;
+            grid-column: 2/3;
+        }
+        .item-3{
+            background-color: rgb(161, 27, 43);
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        .item-4{
+            background-color: rgb(32, 17, 143);
+        }
+        .item-5{
+            background-color: rgb(63, 223, 111);
+            grid-row: 2/3;
+            grid-column: 1/-1
+        }
+        .item-6{
+            background-color: rgb(192, 236, 31);
+        }
+        .item-7{
+            background-color: rgb(114, 47, 47);
+            grid-area: 2/3/3/4;
+        }
+        .item-8{
+            background-color: rgb(10, 255, 173);
+            grid-row: 1/2;
+        }
+        .item-9{
+            background-color: aquamarine;
+           /* grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start:1 ;
+            grid-row-end: 2;*/
+            grid-column: 3/4;
+            grid-row: 1/2;
+        }
+        .item-10{
+            background-color: aquamarine;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1">item-1</div>
+        <div class="item item-2">item-2</div>
+        <div class="item item-3">item-3</div>
+        <div class="item item-4">item-4</div>
+        <div class="item item-5">item-5</div>
+        <div class="item item-6">item-6</div>
+         <div class="item item-7">item-7</div>
+         <div class="item item-8">item-8</div>
+         <div class="item item-9">item-9</div>
+         
+         
+    </div>
+</body>
+</html>
